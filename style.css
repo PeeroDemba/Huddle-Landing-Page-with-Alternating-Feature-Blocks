@@ -1,0 +1,588 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(193, 100%, 96%);
+  display: grid;
+  padding: 5vh 7vw;
+  grid-template-columns: 42vw 42vw;
+  grid-template-rows: 20vh 35rem;
+  min-height: 100vh;
+  gap: 2vw;
+}
+header .card1 img {
+  width: 12rem;
+}
+header .card2 {
+  justify-self: flex-end;
+}
+header .card2 a {
+  padding: 0.8rem 3.3rem;
+  border-radius: 2rem;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+header .card2 a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+}
+header .card3 h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-family: "Poppins", sans-serif;
+}
+header .card3 p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin: 2rem 0;
+}
+header .card3 a {
+  display: inline-block;
+  padding: 1rem 3.5rem;
+  border-radius: 2rem;
+  background-color: hsl(322, 100%, 66%);
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+header .card3 a:hover {
+  background-color: rgba(255, 82, 191, 0.7);
+}
+header .card4 img {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 90vw;
+  min-height: 100vh;
+  gap: 3rem;
+  margin: 5rem auto 15rem auto;
+  width: 90vw;
+}
+main img {
+  width: 25rem;
+}
+main .flex1,
+main .flex2,
+main .flex3 {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 3rem 3rem 3rem 7rem;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+main .flex1 .text h2,
+main .flex2 .text h2,
+main .flex3 .text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+main .flex1 .text p,
+main .flex2 .text p,
+main .flex3 .text p {
+  font-size: 1.3rem;
+  color: #aaa;
+  line-height: 1.8rem;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer .signup {
+  width: 60vw;
+  padding: 0 1rem;
+  background-color: white;
+  height: 15rem;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-top: -7.5rem;
+  color: black;
+}
+footer .signup h2 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+footer .signup a {
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  border-radius: 2.5rem;
+  background-color: hsl(322, 100%, 66%);
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+footer .signup a:hover {
+  background-color: rgba(255, 82, 191, 0.7);
+}
+footer .grid {
+  display: grid;
+  grid-template-columns: 25vw 15vw 15vw 23vw;
+  width: 86vw;
+  gap: 2vw;
+  margin: auto;
+  justify-content: center;
+  min-height: 60vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  color: #ccc;
+}
+footer .grid .grid1 {
+  grid-column: 1/span 4;
+  align-self: flex-end;
+}
+footer .grid .grid1 img {
+  width: 15rem;
+}
+footer .grid .grid6 {
+  grid-column: 1/span 4;
+  justify-self: flex-end;
+}
+footer .grid .grid3,
+footer .grid .grid4 {
+  justify-self: center;
+}
+footer .grid .grid3 ul,
+footer .grid .grid4 ul {
+  list-style-type: none;
+}
+footer .grid .grid3 ul li a,
+footer .grid .grid4 ul li a {
+  color: #ccc;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+footer .grid .grid3 ul li a:hover,
+footer .grid .grid4 ul li a:hover {
+  text-decoration: underline;
+}
+footer .grid .grid2 .phone,
+footer .grid .grid2 .email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+footer .grid .grid2 .phone p,
+footer .grid .grid2 .email p {
+  line-height: 1.7rem;
+}
+footer .grid .grid2 .location {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+footer .grid .grid2 .location p {
+  line-height: 1.7rem;
+}
+footer .grid .grid5 {
+  color: white;
+  display: flex;
+  width: 10rem;
+  justify-content: space-evenly;
+  height: 2rem;
+}
+footer .grid .grid5 p {
+  padding: 0.3rem 0.55rem 0.3rem 0.55rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+footer .grid .grid5 p:hover {
+  border: 1px solid hsl(322, 100%, 66%);
+  cursor: pointer;
+}
+footer .grid .grid5 p:hover i {
+  color: hsl(322, 100%, 66%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1279px) {
+  main {
+    display: grid;
+    grid-template-columns: 90vw;
+    min-height: 100vh;
+    gap: 3rem;
+    margin: 5rem auto 15rem auto;
+    width: 90vw;
+  }
+  main img {
+    width: 25rem;
+  }
+  main .flex1,
+  main .flex2,
+  main .flex3 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 3rem 3rem 7rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .signup {
+    width: 70vw;
+    padding: 0 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: 27vw 15vw 15vw 23vw;
+    width: 86vw;
+    margin: auto;
+    gap: 2vw;
+    justify-content: center;
+    min-height: 60vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #ccc;
+  }
+}
+@media (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 90vw;
+    min-height: 100vh;
+    gap: 3rem;
+    margin: 5rem auto 15rem auto;
+    width: 90vw;
+  }
+  main img {
+    width: 20rem;
+  }
+  main .flex1,
+  main .flex2,
+  main .flex3 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 3rem 3rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .signup {
+    width: 90vw;
+    padding: 0 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: 30vw 15vw 15vw 23vw;
+    width: 90vw;
+    margin: auto;
+    gap: 2vw;
+    justify-content: center;
+    min-height: 60vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #ccc;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(193, 100%, 96%);
+    display: grid;
+    grid-template-columns: 42vw 42vw;
+    grid-template-rows: 20vw 20rem 30rem;
+    min-height: 100vh;
+    gap: 1rem;
+    padding: 3vh 6vw;
+  }
+  header .card1 {
+    align-self: center;
+  }
+  header .card2 {
+    justify-self: flex-end;
+    align-self: center;
+  }
+  header .card2 a {
+    padding: 0.8rem 3.3rem;
+    border-radius: 2rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+  header .card3 {
+    align-self: center;
+    grid-column: 1/span 2;
+    text-align: center;
+  }
+  header .card3 h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  header .card3 p {
+    font-size: 1.3rem;
+    margin: 2rem 0;
+  }
+  header .card4 {
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/span 2;
+  }
+  header .card4 img {
+    width: 100%;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 90vw;
+    gap: 3rem;
+    margin: 5rem auto 15rem auto;
+    width: 90vw;
+  }
+  main img {
+    width: 20rem;
+  }
+  main .flex1,
+  main .flex2,
+  main .flex3 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    gap: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  main .flex1 .text,
+  main .flex2 .text,
+  main .flex3 .text {
+    order: 2;
+  }
+  main .flex1 .text h2,
+  main .flex2 .text h2,
+  main .flex3 .text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  main .flex1 .text p,
+  main .flex2 .text p,
+  main .flex3 .text p {
+    font-size: 1.3rem;
+  }
+  footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .signup {
+    width: 80vw;
+    background-color: white;
+    height: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: -5rem;
+    color: black;
+  }
+  footer .signup h2 {
+    font-size: 1.5rem;
+  }
+  footer .signup a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    background-color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: 80vw;
+    width: 90vw;
+    gap: 3vw;
+    justify-content: center;
+    min-height: 85vh;
+    margin: 2rem auto;
+  }
+  footer .grid .grid1 {
+    grid-column: 1/span 1;
+  }
+  footer .grid .grid6 {
+    grid-column: 1/span 1;
+    justify-self: center;
+    font-size: 0.8rem;
+  }
+  footer .grid .grid5 {
+    justify-self: center;
+  }
+  footer .grid .grid3,
+  footer .grid .grid4 {
+    justify-self: flex-start;
+  }
+  footer .grid .grid3 ul,
+  footer .grid .grid4 ul {
+    list-style-type: none;
+  }
+  footer .grid .grid3 ul li a,
+  footer .grid .grid4 ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  footer .grid .grid3 ul li a:hover,
+  footer .grid .grid4 ul li a:hover {
+    text-decoration: underline;
+  }
+  footer .grid .grid3 {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(193, 100%, 96%);
+    display: grid;
+    grid-template-columns: 42vw 42vw;
+    grid-template-rows: 20vw 30rem 30rem;
+    min-height: 100vh;
+    gap: 1rem;
+    padding: 2vh 6vw;
+  }
+  header .card1 {
+    align-self: center;
+  }
+  header .card1 img {
+    width: 8rem;
+  }
+  header .card2 {
+    justify-self: flex-end;
+    align-self: center;
+  }
+  header .card2 a {
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 90vw;
+    gap: 3rem;
+    margin: 5rem auto 15rem auto;
+    width: 90vw;
+  }
+  main img {
+    width: 17rem;
+  }
+  footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .signup {
+    width: 90vw;
+    background-color: white;
+    height: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: -5rem;
+    color: black;
+    padding: 0 2rem;
+  }
+  footer .signup h2 {
+    font-size: 1.5rem;
+  }
+  footer .signup a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    background-color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
